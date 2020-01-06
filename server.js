@@ -1,5 +1,6 @@
 const Express = require('express');
 const app = Express();
+const calculate = require('./lib').calculate;
 
 app.get('/', (req,res) => {
 	console.log('got /');
@@ -10,12 +11,7 @@ app.get('/calc', (req,res) => {
 	res.send(calculate(req.query.a, req.query.b));
 });
 
-function calculate(a, b) { 
-	return a+b;
-}
-
 app.listen(8080,() => {
 	console.log('listening');
 });
 
-module.exports = { calculate }

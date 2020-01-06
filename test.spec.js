@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const s = require('./server.js');
+const calculate = require('./lib.js').calculate;
 
 describe('should pass', () => {
 	it('should pass', () => {
@@ -9,6 +9,6 @@ describe('should pass', () => {
 
 describe('test calc', () => {
 	it('shoudl give 4', () => {
-		expect(s.calculate(2,2)).to.equal(4);
+		expect(calculate(2,2)).to.equal(4);
 	});
 });
