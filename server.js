@@ -13,4 +13,9 @@ app.get('/calc', (req,res) => {
 function calculate(a, b) { 
 	return a+b;
 }
+
+app.listen(8080,() => {
+	console.log('listening');
+}):
+
 module.exports = { calculate }
