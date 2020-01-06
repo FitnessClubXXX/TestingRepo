@@ -16,6 +16,6 @@ function calculate(a, b) {
 
 app.listen(8080,() => {
 	console.log('listening');
-}):
+});
 
 module.exports = { calculate }
